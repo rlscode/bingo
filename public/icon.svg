@@ -1,26 +1,89 @@
-<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    @media (prefers-color-scheme: light) {
-      .background { fill: black; }
-      .foreground { fill: white; }
-    }
-    @media (prefers-color-scheme: dark) {
-      .background { fill: white; }
-      .foreground { fill: black; }
-    }
-  </style>
-  <g clip-path="url(#clip0_7960_43945)">
-    <rect class="background" width="180" height="180" rx="37" />
-    <g style="transform: scale(95%); transform-origin: center">
-      <path class="foreground"
-        d="M101.141 53H136.632C151.023 53 162.689 64.6662 162.689 79.0573V112.904H148.112V79.0573C148.112 78.7105 148.098 78.3662 148.072 78.0251L112.581 112.898C112.701 112.902 112.821 112.904 112.941 112.904H148.112V126.672H112.941C98.5504 126.672 86.5638 114.891 86.5638 100.5V66.7434H101.141V100.5C101.141 101.15 101.191 101.792 101.289 102.422L137.56 66.7816C137.255 66.7563 136.945 66.7434 136.632 66.7434H101.141V53Z" />
-      <path class="foreground"
-        d="M65.2926 124.136L14 66.7372H34.6355L64.7495 100.436V66.7372H80.1365V118.47C80.1365 126.278 70.4953 129.958 65.2926 124.136Z" />
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="titleDesc">
+  <title id="titleDesc">Icono Bingo Navideño</title>
+
+  <!-- Fondo suave -->
+  <rect x="2" y="2" width="124" height="124" rx="18" ry="18" fill="#f8fafc" stroke="#e6eef6" stroke-width="3"/>
+
+  <!-- Cartón (rounded) -->
+  <g transform="translate(10,18)">
+    <rect x="0" y="0" width="108" height="92" rx="10" ry="10" fill="#fff" stroke="#c7e3f8" stroke-width="3"/>
+    
+    <!-- Gorra de Santa (esquina superior derecha) -->
+    <g transform="translate(72,-10) rotate(18)">
+      <path d="M0 10 C12 -6, 44 -6, 56 10 L46 22 C34 6, 12 6, 0 22 Z" fill="#d6333a"/>
+      <circle cx="56" cy="10" r="7" fill="#fff"/>
+      <ellipse cx="14" cy="20" rx="18" ry="8" fill="#fff"/>
+    </g>
+
+    <!-- Título "BINGO" (separador superior) -->
+    <rect x="6" y="6" width="96" height="14" rx="6" ry="6" fill="#0f4c81"/>
+    <text x="60" y="17" font-family="Segoe UI, Roboto, Arial" font-size="9.5" fill="#fff" text-anchor="middle" font-weight="700">BINGO</text>
+
+    <!-- Grid 3x3 -->
+    <g transform="translate(10,28)" stroke="#d3eafc" stroke-width="1.6">
+      <!-- vertical lines -->
+      <line x1="26" y1="0" x2="26" y2="66"/>
+      <line x1="52" y1="0" x2="52" y2="66"/>
+      <!-- horizontal lines -->
+      <line x1="0" y1="22" x2="78" y2="22"/>
+      <line x1="0" y1="44" x2="78" y2="44"/>
+
+      <!-- Cells content -->
+      <!-- Row 1, Col 1: Bola con número -->
+      <g transform="translate(4,2)">
+        <circle cx="12" cy="10" r="9" fill="#ffd166" stroke="#f2c94c" stroke-width="1"/>
+        <text x="12" y="13" font-size="9" font-family="Segoe UI, Roboto, Arial" text-anchor="middle" fill="#5b3a00" font-weight="700">24</text>
+      </g>
+
+      <!-- Row1 Col2: copo -->
+      <g transform="translate(30,2)">
+        <path d="M13 3 L13 17 M7 8 L19 12 M19 8 L7 12" stroke="#7cc9ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+
+      <!-- Row1 Col3: arbolito -->
+      <g transform="translate(56,2)" >
+        <polygon points="12,0 0,14 24,14" fill="#2f9e44"/>
+        <polygon points="12,6 2,20 22,20" fill="#28a745"/>
+        <rect x="9.5" y="20" width="5" height="6" rx="1" fill="#8b5a2b"/>
+        <circle cx="12" cy="8" r="1.6" fill="#ffd700"/>
+      </g>
+
+      <!-- Row2 Col1: regalo -->
+      <g transform="translate(4,24)">
+        <rect x="1" y="4" width="22" height="14" rx="2" fill="#ff6b6b" stroke="#e34a4a" stroke-width="1"/>
+        <rect x="11" y="4" width="2" height="14" fill="#fff"/>
+        <path d="M1 10 C6 6, 10 6, 11 10 C12 6, 16 6, 21 10" fill="#fff" opacity="0.06"/>
+      </g>
+
+      <!-- Row2 Col2: libre / marcador central (estrella) -->
+      <g transform="translate(30,24)">
+        <circle cx="12" cy="11" r="10" fill="#e9f7ff" stroke="#bfe6ff" stroke-width="1.2"/>
+        <polygon points="12,5 13.7,9.3 18.5,9.7 14.5,12.7 15.6,17 12,14.6 8.4,17 9.5,12.7 5.5,9.7 10.3,9.3" fill="#ffcf33"/>
+      </g>
+
+      <!-- Row2 Col3: bola número -->
+      <g transform="translate(56,24)">
+        <circle cx="12" cy="11" r="9" fill="#bde0fe" stroke="#9edaff" stroke-width="1"/>
+        <text x="12" y="14" font-size="9" font-family="Segoe UI, Roboto, Arial" text-anchor="middle" fill="#0b3b60" font-weight="700">7</text>
+      </g>
+
+      <!-- Row3 Col1: muérdago -->
+      <g transform="translate(4,46)">
+        <path d="M6 6 C2 6, 0 10, 6 12 C4 14, 8 16, 14 12 C20 8, 18 6, 14 6 C10 6, 8 8, 6 6 Z" fill="#2f9e44"/>
+        <circle cx="8" cy="9" r="2.2" fill="#ff6b6b"/>
+        <circle cx="12" cy="9" r="2.2" fill="#ff6b6b"/>
+      </g>
+
+      <!-- Row3 Col2: número -->
+      <g transform="translate(30,46)">
+        <text x="12" y="18" font-size="12" font-family="Segoe UI, Roboto, Arial" text-anchor="middle" fill="#0b3b60" font-weight="700">B</text>
+      </g>
+
+      <!-- Row3 Col3: bet (marcador) -->
+      <g transform="translate(56,46)">
+        <rect x="4" y="4" width="16" height="12" rx="2" fill="#e6f7f9" stroke="#c7eef6" />
+        <circle cx="12" cy="10" r="3" fill="#0f4c81"/>
+      </g>
     </g>
   </g>
-  <defs>
-    <clipPath id="clip0_7960_43945">
-      <rect width="180" height="180" fill="white" />
-    </clipPath>
-  </defs>
 </svg>
