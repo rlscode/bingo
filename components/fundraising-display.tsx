@@ -6,11 +6,11 @@ import { TrendingUp, Ticket, Target, Gift } from 'lucide-react';
 export function FundraisingDisplay() {
   const [amount, setAmount] = useState(0);
   const targetAmount = 600000;
-  const soldCards = 9;
+  const soldCards = 12;
   const totalCards = 150;
 
   useEffect(() => {
-    const finalAmount = 36000;
+    const finalAmount = 48000;
     const duration = 2000;
     const steps = 60;
     const increment = finalAmount / steps;
@@ -100,7 +100,7 @@ export function FundraisingDisplay() {
           <div className='w-full h-2.5 sm:h-3 md:h-4 bg-gray-200 rounded-full overflow-hidden border-2 border-red-300 shadow-inner'>
             <div
               className='h-full bg-gradient-to-r from-red-500 via-rose-500 to-red-600 transition-all duration-1000'
-              style={{ width: `${(1 / 150) * 100}%` }}
+              style={{ width: `${(24 / 150) * 100}%` }}
             />
           </div>
 
