@@ -5,8 +5,8 @@ import { TrendingUp, Ticket, Target, Gift } from 'lucide-react';
 
 export function FundraisingDisplay() {
   const [amount, setAmount] = useState(0);
-  const targetAmount = 600000;
-  const soldCards = 12;
+  const targetAmount = 100000;
+  const soldCards = 25;
   const totalCards = 150;
 
   useEffect(() => {
