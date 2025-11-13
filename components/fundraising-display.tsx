@@ -10,7 +10,7 @@ export function FundraisingDisplay() {
   const totalCards = 150;
 
   useEffect(() => {
-    const finalAmount = 140000;
+    const finalAmount = soldCards * 4000;
     const duration = 2000;
     const steps = 60;
     const increment = finalAmount / steps;
