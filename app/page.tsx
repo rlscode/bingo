@@ -61,7 +61,7 @@ export default function BingoNavidenoPage() {
                 <MapPin className='w-4 h-4 sm:w-5 sm:h-5 text-amber-600 flex-shrink-0' />
                 <div className='flex flex-col'>
                   <span className='text-xs sm:text-sm md:text-base font-bold'>
-                    Casa Club Dos
+                    Casa Club Uno
                   </span>
                   <span className='text-[10px] sm:text-xs md:text-sm text-gray-600'>
                     Condominio Source Living
