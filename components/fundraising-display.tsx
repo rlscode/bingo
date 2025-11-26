@@ -94,7 +94,7 @@ export function FundraisingDisplay() {
           </div>
 
           <p className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-center text-red-700 tabular-nums mb-2 sm:mb-3 md:mb-4'>
-            24 / 150
+            50 / 150
           </p>
 
           <div className='w-full h-2.5 sm:h-3 md:h-4 bg-gray-200 rounded-full overflow-hidden border-2 border-red-300 shadow-inner'>
